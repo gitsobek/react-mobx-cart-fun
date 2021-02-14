@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { StoresProvider } from './mobx/StoresProvider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StoresProvider>
+      <App />
+    </StoresProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

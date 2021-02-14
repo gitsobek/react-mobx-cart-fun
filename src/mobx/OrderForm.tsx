@@ -20,7 +20,6 @@ export const OrderForm = observer(() => {
     ordersStore.addOrder(data.drink, data.burger);
   });
 
-
   if (isLoading) {
     return <>Loading...</>;
   }
